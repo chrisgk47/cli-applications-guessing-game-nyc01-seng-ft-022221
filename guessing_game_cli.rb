@@ -1,5 +1,6 @@
 def run_guessing_game
-  puts "Guess a number between 1 and 6"
+  prompt = "Guess a number between 1 and 6"
+  puts prompt
   num = 1 + rand(6)
   input = gets.chomp.to_s
   correct = "You guessed the correct number!"
@@ -11,6 +12,6 @@ def run_guessing_game
   elsif input != num
     puts "Sorry! The computer guessed #{num}."
   else
-    puts "Guess a number between 1 and 6"
+    puts prompt
   end
 end
